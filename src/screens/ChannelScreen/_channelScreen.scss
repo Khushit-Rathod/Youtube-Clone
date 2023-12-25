@@ -1,0 +1,38 @@
+@import "../../base";
+
+.channelHeader {
+  border-bottom: 1px solid $border-color;
+  &__left {
+    img {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      margin-right: 0.4rem;
+    }
+  }
+  button {
+    text-transform: uppercase;
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: none;
+    :hover {
+      background-color: gray;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .channelHeader {
+    padding: 1rem 0;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}
