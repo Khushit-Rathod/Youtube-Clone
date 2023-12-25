@@ -1,0 +1,76 @@
+@import "../../base";
+.videoMetaData {
+  padding: 2px;
+  &__top {
+    &__views {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1px;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    white-space: pre-line;
+    border-bottom: 0.2px solid $border-color;
+
+    .showMoreText {
+      text-decoration: none;
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}
+
+.up {
+  margin-right: 8px;
+}
+
+.down {
+  margin-right: 5px;
+}
+
+.channel {
+  border-top: 0.2px solid $border-color;
+  border-bottom: 0.2px solid $border-color;
+  justify-content: space-between;
+  display: flex;
+  margin: 0.4rem 0;
+  padding: 0.4rem 0;
+  img {
+    width: 45px;
+    height: 45px;
+    margin-right: 9px;
+  }
+  .channel_name {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  .btn {
+    background-color: red;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    &.btn-gray {
+      background-color: gray;
+    }
+    :hover {
+      color: #fff;
+    }
+    :focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
